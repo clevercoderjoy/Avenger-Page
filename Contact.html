@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conact</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: serif;
+        }
+        .Contact-form{
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+            margin: 50px auto;
+            width: 350px;
+            border-radius: 3px;
+            text-align: center;
+        }
+        .Contact-form h2{
+            background: #bea4a4;
+            margin-top: 0;
+            padding: 10px;
+        }
+        .Contact-form input{
+            display: block;
+            width: 60%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        .Contact-form textarea{
+            width: 65%;
+            height: 70px;
+            margin: 5px auto;
+        }
+        .submit-btn{
+            cursor: pointer;
+            width: 150px !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="Contact-form">
+    <h2>Contact Us</h2>
+    <form method="post" action="">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="Contact" placeholder="Contact No" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="Message" placeholder="Your Message"></textarea>
+        <div class="g-recaptcha" data-sitekey="6Ld0ifQcAAAAAG2xYUKkwPSs8F3yttHsqNNheGbN"></div>
+        <input type="Submit" name="Submit" value="Send Message" class="submit-btn">
+    </form>
+    </div>
+</body>
+</html>
