@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image:url(images/image.jpg);
+    background-image:url("file:///D:/ITHQ%20Project1/Images/image.jpg");
     background-repeat: no-repeat;
     background-size: 100%;    
 }
